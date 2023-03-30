@@ -1,9 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import Product from '../product/Product';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTrashCan } from '@fortawesome/free-solid-svg-icons'
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
-
 import './Shop.css'
 import Cart from '../Cart/Cart';
 
@@ -31,6 +27,7 @@ const Shop = () => {
                         handleAddToCard={handleAddToCard}
                     ></Product>)
                 }
+                
             </div>
             <div className='cart-container'>
                <Cart cart={cart}></Cart>

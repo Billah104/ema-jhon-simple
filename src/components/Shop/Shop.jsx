@@ -5,6 +5,7 @@ import { faTrashCan } from '@fortawesome/free-solid-svg-icons'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 import './Shop.css'
+import Cart from '../Cart/Cart';
 
 const Shop = () => {
     const [products, setProducts] = useState([]);
@@ -32,18 +33,17 @@ const Shop = () => {
                 }
             </div>
             <div className='cart-container'>
-                <h2>Order Summary</h2>
-                <p>Selected Items: {cart.length} </p>
-                <p>Total Price:</p>
+               <Cart cart={cart}></Cart>
+                {/* <p>Total Price: </p>
                 <p>Total Shipping Charge: $5</p>
                 <p>Tax: $114</p>
-                <p>Grand Total:</p>
-                <button className='clear-cart'>
+                <p>Grand Total:</p> */}
+                {/* <button className='clear-cart'>
                     Clear Cart <FontAwesomeIcon icon={faTrashCan} />
                 </button> <br />
                 <button className='review-order'>
                     Review Order <FontAwesomeIcon icon={faArrowRight} />
-                    </button>                
+                    </button>                 */}
             </div>
         </div>
     );

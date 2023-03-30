@@ -1,13 +1,31 @@
-.shop-container{
+.shop-container {
     display: grid;
-    grid-template-columns: 4fr  1fr;
+    grid-template-columns: 4fr 1fr;
 }
 
-.products-container{
+.products-container {
     display: grid;
-    grid-template-columns: repeat(3 , 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 45px;
     margin-left: 104px;
     margin-top: 120px;
     margin-right: 82px;
+}
+
+.clear-cart {
+    background: #FF3030;
+    border-radius: 4px;
+    padding: 13px 15px 14px 15px;
+    color: FFFFFF;
+    width: 232px;
+    margin-bottom: 5px;
+
+}
+
+.review-order {
+    background: #FF9900;
+    border-radius: 4px;
+    width: 232px;
+    padding: 13px 15px 14px 15px;
+
 }
